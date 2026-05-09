@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type NavLink = { name: string; href: string } | { name: string };
@@ -13,10 +14,12 @@ const links: NavLink[] = [
 export default function Navbar() {
   return (
     <div className="bg-(--primary) border-b border-(--primary-light)">
-      <nav className="h-16 text-white flex items-center justify-between px-4 container-wrapper font-(family-name:--font-barlow-condensed)">
+      <nav className="h-18 text-white flex items-center justify-between px-4 container-wrapper font-(family-name:--font-barlow-condensed)">
 
         {/* logo  */}
-        <div className="text-lg font-bold">Micah K Official</div>
+        <div>
+          <Image src="/images/logo.png" alt="Logo" width={70} height={40} />
+        </div>
 
         {/* nav links  */}
         <div className="space-x-4 uppercase">

@@ -56,14 +56,14 @@ export function HeroSection() {
                     <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
                         <Link
                             href="/"
-                            className="inline-flex w-fit items-center justify-center rounded-md bg-(--secondary) px-5 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:bg-(--secondary-light)"
+                            className="inline-flex w-fit items-center justify-center rounded-md bg-(--secondary) px-5 py-4 text-sm font-bold uppercase  text-white transition-colors duration-300 hover:bg-(--secondary-light)"
                         >
                             Get My Instant Quote
                         </Link>
 
                         <Link
                             href="/about"
-                            className="inline-flex w-fit items-center justify-center rounded-md border border-white/60 bg-transparent px-5 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
+                            className="inline-flex w-fit items-center justify-center rounded-md border border-white/60 bg-transparent px-5 py-4 text-sm font-bold uppercase text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
                         >
                             Not Sure? Start Here →
                         </Link>
