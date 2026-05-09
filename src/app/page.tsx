@@ -1,7 +1,9 @@
+import { HeroSection } from "@/features/home";
+
 export default function Home() {
   return (
-    <div>
-
-    </div>
+    <main>
+      <HeroSection />
+    </main>
   );
 }
