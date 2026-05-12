@@ -5,6 +5,7 @@ import "./globals.css";
 import { barlowCondensed } from '@/lib/fonts';
 
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -1,4 +1,6 @@
-import { HeroBottom, HeroSection, InteractiveTool } from "@/features/home";
+import { HeroBottom, HeroSection, InteractiveTool } from "@/components/features/home";
+import AcRejuvenationSection from "@/components/features/home/AcrejuvenationSection/AcrejuvenationSection";
+import HvacEstimateSection from "@/components/features/home/HvacEstimateSection";
 
 export default function Home() {
   return (
@@ -6,6 +8,8 @@ export default function Home() {
       <HeroSection />
       <HeroBottom />
       <InteractiveTool />
+      <HvacEstimateSection/>
+      <AcRejuvenationSection/>
     </main>
   );
 }
