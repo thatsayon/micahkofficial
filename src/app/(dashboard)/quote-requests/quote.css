@@ -1,0 +1,120 @@
+.table-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.table-controls {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.search-input {
+  padding: 10px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 300px;
+  outline: none;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+}
+
+.filter-select {
+  padding: 10px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  background-color: white;
+  font-family: inherit;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.quotes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quotes-table th {
+  text-align: left;
+  padding: 16px 24px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  font-size: 13px;
+  border-bottom: 1px solid var(--color-border);
+  background-color: #fafafa;
+}
+
+.quotes-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.quotes-table tr:hover td {
+  background-color: #fafafa;
+}
+
+.td-primary {
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.quotes-table td:first-child .td-primary {
+  color: var(--color-primary);
+}
+
+.td-secondary {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.table-footer {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showing-text {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.page-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: white;
+  color: var(--color-text-main);
+  font-size: 14px;
+}
+
+.page-btn:hover:not(.disabled):not(.active) {
+  background-color: #f3f4f6;
+}
+
+.page-btn.active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary-light);
+  font-weight: 500;
+}
+
+.page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

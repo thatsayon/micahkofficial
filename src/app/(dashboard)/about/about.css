@@ -1,0 +1,74 @@
+.content-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 24px;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rich-text-editor-container {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.quill-editor .ql-toolbar {
+  border: none !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  background-color: #fafafa;
+  padding: 8px 12px !important;
+}
+
+.quill-editor .ql-container {
+  border: none !important;
+  min-height: 250px;
+  font-family: inherit !important;
+  font-size: 14px !important;
+}
+
+.quill-editor .ql-editor {
+  padding: 16px 20px !important;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.quill-editor .ql-editor.ql-blank::before {
+  color: var(--color-text-muted);
+  font-style: normal;
+  left: 20px;
+}
+
+.quill-editor .ql-snow .ql-stroke {
+  stroke: var(--color-text-muted);
+}
+
+.quill-editor .ql-snow .ql-fill {
+  fill: var(--color-text-muted);
+}
+
+.quill-editor .ql-snow.ql-toolbar button:hover .ql-stroke,
+.quill-editor .ql-snow.ql-toolbar button.ql-active .ql-stroke {
+  stroke: var(--color-primary);
+}
+
+.quill-editor .ql-snow.ql-toolbar button:hover .ql-fill,
+.quill-editor .ql-snow.ql-toolbar button.ql-active .ql-fill {
+  fill: var(--color-primary);
+}
