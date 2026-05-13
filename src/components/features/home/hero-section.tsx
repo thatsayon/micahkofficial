@@ -27,7 +27,7 @@ const cards = [
 
 export function HeroSection() {
     return (
-        <section className="relative overflow-hidden bg-(--primary) text-white">
+        <section id="new-system-quote" className="relative overflow-hidden bg-(--primary) text-white">
             <div className="absolute inset-0 bg-[url('/images/hero_bg.png')] bg-cover bg-center bg-no-repeat opacity-35" />
             <div className="absolute inset-0 bg-linear-to-r from-(--primary) via-(--primary)/92 to-(--primary)/55" />
             <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-(--primary)/70" />
