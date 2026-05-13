@@ -8,7 +8,7 @@ import { SchedulingCard } from "./SchedulingCard";
 
 export default function AcRejuvenationSection() {
   return (
-    <section className="w-full bg-[#F7F8FA] py-16 md:py-24">
+    <section id="ac-rejuvenation" className="w-full bg-[#F7F8FA] py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
           {/* ── Left Column ─────────────────────────────────── */}
