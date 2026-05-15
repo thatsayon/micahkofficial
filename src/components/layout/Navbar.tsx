@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { name: "New System Quote", href: "#new-system-quote" },
@@ -32,7 +33,11 @@ const navItems = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
-
+  const pathname = usePathname();
+  const isProtected = pathname.startsWith("/dashboard");
+  if (isProtected) {
+    return <></>;
+  }
   return (
     <header className="sticky top-0 z-50 bg-[var(--primary)] border-b border-[var(--primary-light)]/80">
       <div className=" max-w-360 mx-auto flex items-center justify-between gap-8 py-4">
